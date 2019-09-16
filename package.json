@@ -1,0 +1,61 @@
+{
+  "name": "coc-styled-components",
+  "version": "0.1.0",
+  "description": "Styled component for coc.nvim as a tsserver plugin",
+  "author": "Heyward Fann <fannheyward@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "coc.nvim",
+    "styled-components"
+  ],
+  "engines": {
+    "coc": "^0.0.70"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "prepare": "npx npm-run-all clean build"
+  },
+  "dependencies": {
+    "typescript-styled-plugin": "^0.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.1",
+    "coc.nvim": "^0.0.73",
+    "rimraf": "^3.0.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.6.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
+  },
+  "contributes": {
+    "configuration": {
+      "id": "styled-components",
+      "type": "object",
+      "title": "coc-styled-components configuration",
+      "properties": {
+        "styled-components.tags": {
+          "type": "array",
+          "description": "List of tags to enable styled component IntelliSense",
+          "items": {
+            "type": "string",
+            "description": "Tag name."
+          },
+          "default": [
+            "styled",
+            "css",
+            "sty"
+          ]
+        }
+      }
+    },
+    "typescriptServerPlugins": [
+      {
+        "name": "typescript-styled-plugin",
+        "enableForWorkspaceTypeScriptVersions": true
+      }
+    ]
+  }
+}
