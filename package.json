@@ -30,6 +30,12 @@
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6"
   },
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact"
+  ],
   "contributes": {
     "configuration": {
       "id": "styled-components",
