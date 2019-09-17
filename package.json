@@ -54,6 +54,16 @@
             "css",
             "sty"
           ]
+        },
+        "styled-components.validate": {
+          "type": "boolean",
+          "description": "Enable/disable error reporting",
+          "default": true
+        },
+        "styled-components.lint": {
+          "type": "object",
+          "description": "Lint errors report style",
+          "default": {}
         }
       }
     },

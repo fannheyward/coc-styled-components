@@ -6,6 +6,8 @@ const configurationSection = 'styled-components';
 
 interface SynchronizedConfiguration {
   tags?: ReadonlyArray<string>;
+  validate?: boolean;
+  lint?: object;
 }
 
 export async function activate(context: ExtensionContext): Promise<void> {
@@ -49,7 +51,12 @@ function getConfiguration(): SynchronizedConfiguration {
   withConfigValue<string[]>(config, 'tags', tags => {
     outConfig.tags = tags;
   });
-  // TODO
+  withConfigValue<boolean>(config, 'validate', validate => {
+    outConfig.validate = validate;
+  });
+  withConfigValue<object>(config, 'lint', lint => {
+    outConfig.lint = lint;
+  });
 
   return outConfig;
 }

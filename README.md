@@ -15,8 +15,10 @@ Styled component for coc.nvim as a tsserver plugin
 ## Configurations
 
 - `styled-components.tags`: custom styled-components tags, defaults: `['styled', 'css', 'sty']`
+- `styled-components.validate`: enable/disable error reporting, defaults: `true`
+- `styled-components.lint`: lint errors report style, defaults: `{}`
 
-Checkout [typescript-styled-plugin](https://github.com/microsoft/typescript-styled-plugin#configuration) configurations.
+Checkout [typescript-styled-plugin configurations](https://github.com/microsoft/typescript-styled-plugin#configuration).
 
 ## License
 
