@@ -19,7 +19,7 @@
     "prepare": "npx npm-run-all clean build"
   },
   "dependencies": {
-    "typescript-styled-plugin": "^0.14.0"
+    "typescript-styled-plugin": "^0.15.0"
   },
   "devDependencies": {
     "@types/node": "^12.7.1",
