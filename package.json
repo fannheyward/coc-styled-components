@@ -16,7 +16,7 @@
     "clean": "rimraf lib",
     "watch": "webpack --watch",
     "build": "webpack",
-    "prepare": "npx npm-run-all clean build"
+    "prepare": "npm-run-all clean build"
   },
   "dependencies": {
     "typescript-styled-plugin": "^0.15.0"
@@ -24,11 +24,8 @@
   "devDependencies": {
     "@types/node": "^12.7.1",
     "coc.nvim": "^0.0.74",
-    "rimraf": "^3.0.0",
     "ts-loader": "^6.0.4",
-    "typescript": "^3.6.3",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.6"
+    "typescript": "^3.6.3"
   },
   "activationEvents": [
     "onLanguage:javascript",
