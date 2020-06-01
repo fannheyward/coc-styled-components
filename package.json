@@ -22,7 +22,7 @@
     "typescript-styled-plugin": "^0.15.0"
   },
   "devDependencies": {
-    "@types/node": "^13.1.2",
+    "@types/node": "^14.0.6",
     "coc.nvim": "^0.0.77",
     "npm-run-all": "^4.1.5",
     "ts-loader": "^7.0.2",
