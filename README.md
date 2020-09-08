@@ -1,6 +1,6 @@
 # coc-styled-components
 
-Styled component for coc.nvim as a tsserver plugin
+[Styled components](https://styled-components.com) for coc.nvim as a tsserver plugin
 
 ## Features
 
