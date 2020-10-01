@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@types/node": "^14.0.6",
-    "coc.nvim": "^0.0.77",
+    "coc.nvim": "^0.0.79",
     "npm-run-all": "^4.1.5",
     "ts-loader": "^8.0.2",
     "typescript": "^4.0.2",
