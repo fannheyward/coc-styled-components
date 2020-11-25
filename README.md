@@ -14,7 +14,7 @@
 
 ## Configurations
 
-- `styled-components.tags`: custom styled-components tags, defaults: `['styled', 'css', 'sty']`
+- `styled-components.tags`: custom styled-components tags, defaults: `['styled', 'css', 'sty', 'createGlobalStyle']`
 - `styled-components.validate`: enable/disable error reporting, defaults: `true`
 - `styled-components.lint`: lint errors report style, defaults: `{}`
 
