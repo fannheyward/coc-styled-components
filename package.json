@@ -52,7 +52,8 @@
           "default": [
             "styled",
             "css",
-            "sty"
+            "sty",
+            "createGlobalStyle"
           ]
         },
         "styled-components.validate": {
