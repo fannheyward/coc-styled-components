@@ -1,6 +1,6 @@
 {
   "name": "coc-styled-components",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Styled component for coc.nvim as a tsserver plugin",
   "author": "Heyward Fann <fannheyward@gmail.com>",
   "license": "MIT",
