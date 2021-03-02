@@ -11,7 +11,7 @@ interface SynchronizedConfiguration {
 }
 
 export async function activate(context: ExtensionContext): Promise<void> {
-  const tsExtension = extensions.getExtension(typeScriptExtensionId).extension;
+  const tsExtension = extensions.all.find((e) => e.id === typeScriptExtensionId);
   if (!tsExtension) {
     return;
   }
@@ -27,7 +27,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
   }
 
   workspace.onDidChangeConfiguration(
-    e => {
+    (e) => {
       if (e.affectsConfiguration(configurationSection)) {
         synchronizeConfiguration(api);
       }
@@ -48,13 +48,13 @@ function getConfiguration(): SynchronizedConfiguration {
   const config = workspace.getConfiguration(configurationSection);
   const outConfig: SynchronizedConfiguration = {};
 
-  withConfigValue<string[]>(config, 'tags', tags => {
+  withConfigValue<string[]>(config, 'tags', (tags) => {
     outConfig.tags = tags;
   });
-  withConfigValue<boolean>(config, 'validate', validate => {
+  withConfigValue<boolean>(config, 'validate', (validate) => {
     outConfig.validate = validate;
   });
-  withConfigValue<object>(config, 'lint', lint => {
+  withConfigValue<object>(config, 'lint', (lint) => {
     outConfig.lint = lint;
   });
 

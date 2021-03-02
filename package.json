@@ -10,25 +10,24 @@
     "styled-components"
   ],
   "engines": {
-    "coc": "^0.0.70"
+    "coc": "^0.0.80"
   },
   "scripts": {
-    "clean": "rimraf lib",
-    "watch": "webpack --watch",
-    "build": "webpack",
-    "prepare": "npm-run-all clean build"
+    "build": "node esbuild.js",
+    "prepare": "node esbuild.js"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 180,
+    "semi": true
   },
   "dependencies": {
     "typescript-styled-plugin": "^0.15.0"
   },
   "devDependencies": {
-    "@types/node": "^14.14.9",
-    "coc.nvim": "^0.0.79",
-    "npm-run-all": "^4.1.5",
-    "ts-loader": "^8.0.11",
-    "typescript": "^4.1.2",
-    "webpack": "^5.6.0",
-    "webpack-cli": "^4.2.0"
+    "coc.nvim": "^0.0.80",
+    "esbuild": "^0.8.54",
+    "typescript": "^4.1.2"
   },
   "activationEvents": [
     "onLanguage:javascript",
