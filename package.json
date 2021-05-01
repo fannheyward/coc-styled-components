@@ -22,7 +22,7 @@
     "semi": true
   },
   "dependencies": {
-    "typescript-styled-plugin": "^0.15.0"
+    "typescript-styled-plugin": "^0.16.0"
   },
   "devDependencies": {
     "coc.nvim": "^0.0.80",
